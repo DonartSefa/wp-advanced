@@ -15,3 +15,5 @@ function ds_menu(){
         'primary'=>'Primary Menu'
     ));
 }
+
+add_action('after_setup_theme', 'ds_menu');
