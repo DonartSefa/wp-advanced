@@ -20,4 +20,14 @@
         <?php if(get_bloginfo('description')):?>
             <p class="site-tagline"><?php bloginfo('description')?></p>
             <?php endif; ?>
+             <nav class='site-nav'>
+        <?php 
+            wp_nav_menu(array(
+                'theme-location'=>'primary',
+                'menu_class'=>'main-menu'
+            ));
+        ?>
+    </nav>
     </header>
+
+   
